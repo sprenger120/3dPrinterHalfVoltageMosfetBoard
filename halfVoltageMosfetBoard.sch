@@ -46,12 +46,12 @@ Wire Wire Line
 $Comp
 L Device:R R12
 U 1 1 6099C86E
-P 8600 1250
-F 0 "R12" H 8670 1296 50  0000 L CNN
-F 1 "100k" H 8670 1205 50  0000 L CNN
-F 2 "Resistor_SMD:R_0603_1608Metric" V 8530 1250 50  0001 C CNN
-F 3 "~" H 8600 1250 50  0001 C CNN
-	1    8600 1250
+P 7750 850
+F 0 "R12" H 7820 896 50  0000 L CNN
+F 1 "100k" H 7820 805 50  0000 L CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" V 7680 850 50  0001 C CNN
+F 3 "~" H 7750 850 50  0001 C CNN
+	1    7750 850 
 	1    0    0    -1  
 $EndComp
 $Comp
@@ -100,14 +100,6 @@ F 3 "~" H 8900 1050 50  0001 C CNN
 	1    8900 1050
 	1    0    0    -1  
 $EndComp
-Wire Wire Line
-	8700 1050 8600 1050
-Wire Wire Line
-	8600 1100 8600 1050
-Wire Wire Line
-	8600 1400 8600 1450
-Wire Wire Line
-	8600 1450 9000 1450
 $Comp
 L power:GND #PWR0105
 U 1 1 609A8F1E
@@ -119,18 +111,15 @@ F 3 "" H 9000 1500 50  0001 C CNN
 	1    9000 1500
 	1    0    0    -1  
 $EndComp
-Wire Wire Line
-	9000 1500 9000 1450
-Connection ~ 9000 1450
 $Comp
 L Device:R R13
 U 1 1 609AD4E5
-P 8600 2250
-F 0 "R13" H 8670 2296 50  0000 L CNN
-F 1 "100k" H 8670 2205 50  0000 L CNN
-F 2 "Resistor_SMD:R_0603_1608Metric" V 8530 2250 50  0001 C CNN
-F 3 "~" H 8600 2250 50  0001 C CNN
-	1    8600 2250
+P 7750 1900
+F 0 "R13" H 7820 1946 50  0000 L CNN
+F 1 "100k" H 7820 1855 50  0000 L CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" V 7680 1900 50  0001 C CNN
+F 3 "~" H 7750 1900 50  0001 C CNN
+	1    7750 1900
 	1    0    0    -1  
 $EndComp
 $Comp
@@ -144,14 +133,6 @@ F 3 "~" H 8900 2050 50  0001 C CNN
 	1    8900 2050
 	1    0    0    -1  
 $EndComp
-Wire Wire Line
-	8700 2050 8600 2050
-Wire Wire Line
-	8600 2100 8600 2050
-Wire Wire Line
-	8600 2400 8600 2450
-Wire Wire Line
-	8600 2450 9000 2450
 $Comp
 L power:GND #PWR0106
 U 1 1 609AD4F8
@@ -163,9 +144,6 @@ F 3 "" H 9000 2500 50  0001 C CNN
 	1    9000 2500
 	1    0    0    -1  
 $EndComp
-Wire Wire Line
-	9000 2500 9000 2450
-Connection ~ 9000 2450
 Wire Wire Line
 	9000 850  9000 800 
 Wire Wire Line
@@ -243,10 +221,6 @@ Wire Wire Line
 	10700 1650 10750 1650
 Wire Wire Line
 	10750 1650 10750 1700
-Wire Wire Line
-	9000 1250 9000 1450
-Wire Wire Line
-	9000 2250 9000 2450
 $Comp
 L Device:C C13
 U 1 1 609D2C7E
@@ -316,17 +290,6 @@ Wire Wire Line
 Text Notes 7150 2900 0    50   ~ 0
 close to mic4126
 $Comp
-L MIC4126:MIC4126 U4
-U 1 1 6099B1A3
-P 7250 750
-F 0 "U4" H 7500 350 50  0000 C CNN
-F 1 "MIC4126" H 7500 250 50  0000 C CNN
-F 2 "Package_SO:SOIC-8-1EP_3.9x4.9mm_P1.27mm_EP2.29x3mm_ThermalVias" H 7550 400 50  0001 C CNN
-F 3 "" H 7550 400 50  0001 C CNN
-	1    7250 750 
-	1    0    0    -1  
-$EndComp
-$Comp
 L Device:CP C18
 U 1 1 609E1535
 P 9500 3700
@@ -357,7 +320,7 @@ Wire Wire Line
 Wire Wire Line
 	9500 3550 9500 3500
 Wire Wire Line
-	7650 1600 8100 1600
+	7650 1600 7750 1600
 $Comp
 L Device:CP C17
 U 1 1 609F235B
@@ -397,7 +360,7 @@ Wire Wire Line
 Wire Wire Line
 	9150 3500 9500 3500
 Wire Wire Line
-	8100 1500 7650 1500
+	8100 1500 7750 1500
 Wire Wire Line
 	8450 3500 8800 3500
 Connection ~ 9150 3500
@@ -811,9 +774,9 @@ Wire Wire Line
 	3350 7400 3350 7450
 Text Label 3650 7050 0    50   ~ 0
 Temp
-Text Label 6250 1500 2    50   ~ 0
-Heater1
 Text Label 6250 1600 2    50   ~ 0
+Heater1
+Text Label 6250 1500 2    50   ~ 0
 Heater2
 $Comp
 L Device:R R8
@@ -1013,10 +976,8 @@ Wire Wire Line
 Connection ~ 1700 3300
 Wire Wire Line
 	1700 3300 1750 3300
-Text Label 2200 3550 0    50   ~ 0
+Text Label 2200 4150 0    50   ~ 0
 Temp
-Wire Wire Line
-	2200 3550 2150 3550
 Text Label 2200 3750 0    50   ~ 0
 Heater1
 Wire Wire Line
@@ -1307,18 +1268,10 @@ Wire Wire Line
 	1500 7000 1500 6950
 Text Notes 600  7650 0    50   ~ 10
 Connect these to the !negative! \nTerminal of your 24V Motherboards \npower output
-Text Label 5800 5300 2    50   ~ 0
+Text Label 2200 3950 0    50   ~ 0
 Heater2ActiveLed
-Text Label 5800 5200 2    50   ~ 0
+Text Label 1200 4550 2    50   ~ 0
 Heater1ActiveLed
-Text Label 2450 6350 0    50   ~ 0
-EnableHeater1
-Text Label 2450 6450 0    50   ~ 0
-EnableHeater2
-Text Label 5800 5100 2    50   ~ 0
-EnableHeater1
-Text Label 5800 5000 2    50   ~ 0
-EnableHeater2
 Text Notes 600  5500 0    50   ~ 10
 Heater Command input
 Wire Notes Line
@@ -1461,12 +1414,12 @@ Wire Wire Line
 Connection ~ 10350 2600
 Wire Wire Line
 	10350 2600 10350 2550
-Text Label 10350 2750 2    50   ~ 0
-Stage1
+Text Label 10350 2850 2    50   ~ 0
+PowerHeater1
 Wire Wire Line
 	10350 2750 10400 2750
-Text Label 10350 2850 2    50   ~ 0
-Stage2
+Text Label 10350 2750 2    50   ~ 0
+PowerHeater2
 Wire Wire Line
 	10350 2850 10400 2850
 Wire Wire Line
@@ -1477,26 +1430,20 @@ Wire Wire Line
 	8100 1500 8100 1400
 Wire Wire Line
 	8100 1100 8100 1050
-Wire Wire Line
-	8100 1050 8600 1050
-Connection ~ 8600 1050
-Wire Wire Line
-	8100 2050 8600 2050
-Connection ~ 8600 2050
 Text Label 9200 800  0    50   ~ 0
-Stage1
+PowerHeater1
 Text Label 9200 1800 0    50   ~ 0
-Stage2
+PowerHeater2
 Wire Wire Line
 	9000 1800 9200 1800
 Wire Wire Line
 	9200 800  9000 800 
 Text Label 10500 1200 2    50   ~ 0
-Stage1
+PowerHeater1
 Wire Wire Line
 	10550 1200 10550 1300
 Text Label 10500 2100 2    50   ~ 0
-Stage2
+PowerHeater2
 Wire Wire Line
 	10550 2000 10550 2100
 Wire Wire Line
@@ -1509,23 +1456,11 @@ Wire Notes Line
 	5750 4200 11150 4200
 Wire Notes Line
 	11150 4200 11150 550 
-NoConn ~ 5800 5300
-NoConn ~ 5800 5200
 NoConn ~ 1250 4650
-NoConn ~ 1250 4550
 NoConn ~ 1250 4350
 NoConn ~ 1250 4250
 NoConn ~ 2150 4450
 NoConn ~ 2150 4350
-NoConn ~ 2150 4250
-NoConn ~ 2150 4150
-NoConn ~ 2150 3850
-NoConn ~ 2150 3950
-NoConn ~ 2150 3650
-Text Notes 5800 5000 0    50   ~ 10
-5V compatible gpio
-Text Notes 5800 5100 0    50   ~ 10
-5V compatible gpio
 $Comp
 L Mechanical:MountingHole H1
 U 1 1 6106C7BB
@@ -1570,4 +1505,97 @@ F 3 "~" H 8200 5850 50  0001 C CNN
 	1    8200 5850
 	1    0    0    -1  
 $EndComp
+Wire Wire Line
+	8100 2050 8700 2050
+$Comp
+L MIC4126:MIC4126 U4
+U 1 1 6099B1A3
+P 7250 750
+F 0 "U4" H 7500 350 50  0000 C CNN
+F 1 "MIC4126" H 7500 250 50  0000 C CNN
+F 2 "Package_SO:SOIC-8-1EP_3.9x4.9mm_P1.27mm_EP2.29x3mm_ThermalVias" H 7550 400 50  0001 C CNN
+F 3 "" H 7550 400 50  0001 C CNN
+	1    7250 750 
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR0107
+U 1 1 611A554B
+P 7750 2100
+F 0 "#PWR0107" H 7750 1850 50  0001 C CNN
+F 1 "GND" H 7755 1927 50  0000 C CNN
+F 2 "" H 7750 2100 50  0001 C CNN
+F 3 "" H 7750 2100 50  0001 C CNN
+	1    7750 2100
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7750 2050 7750 2100
+Wire Wire Line
+	9000 2250 9000 2500
+Wire Wire Line
+	8100 1050 8700 1050
+Wire Wire Line
+	9000 1250 9000 1500
+$Comp
+L power:GND #PWR0144
+U 1 1 611B8FDB
+P 7550 700
+F 0 "#PWR0144" H 7550 450 50  0001 C CNN
+F 1 "GND" H 7555 527 50  0000 C CNN
+F 2 "" H 7550 700 50  0001 C CNN
+F 3 "" H 7550 700 50  0001 C CNN
+	1    7550 700 
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7750 700  7750 650 
+Wire Wire Line
+	7750 650  7550 650 
+Wire Wire Line
+	7550 650  7550 700 
+Wire Wire Line
+	7750 1750 7750 1600
+Connection ~ 7750 1600
+Wire Wire Line
+	7750 1600 8100 1600
+Wire Wire Line
+	7750 1500 7750 1000
+Connection ~ 7750 1500
+Wire Wire Line
+	7750 1500 7650 1500
+Wire Wire Line
+	2150 4150 2200 4150
+NoConn ~ 2150 3550
+Text Label 2200 3850 0    50   ~ 0
+InputHeater1
+Text Label 2200 3650 0    50   ~ 0
+InputHeater2
+Wire Wire Line
+	2200 3850 2150 3850
+Wire Wire Line
+	2200 3650 2150 3650
+Wire Wire Line
+	2150 4250 2900 4250
+Wire Wire Line
+	2900 4250 2900 4150
+$Comp
+L power:+3V3 #PWR0145
+U 1 1 61329EA7
+P 2900 4150
+F 0 "#PWR0145" H 2900 4000 50  0001 C CNN
+F 1 "+3V3" H 2915 4323 50  0000 C CNN
+F 2 "" H 2900 4150 50  0001 C CNN
+F 3 "" H 2900 4150 50  0001 C CNN
+	1    2900 4150
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1200 4550 1250 4550
+Wire Wire Line
+	2200 3950 2150 3950
+Text Label 2450 6450 0    50   ~ 0
+InputHeater2
+Text Label 2450 6350 0    50   ~ 0
+InputHeater1
 $EndSCHEMATC
