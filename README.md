@@ -8,7 +8,9 @@ The firmware also allows you to finely control how much voltage you want to send
 
 ### Making one
 
-This project is mostly built from stuff I had laying around so make changes according to what you had laying around. *Capacitors with a higher voltage but the same farads rating are always compatible!*
+This project is mostly built from stuff I had laying around so make changes according to what you had laying around. *Capacitors with a higher voltage but the same farads rating are always compatible!*  
+
+You can find the PCB's gerber files in fab/.
 
 - 1x 10uF 36V MLCC , 0805 (imperial) 
 - 3x 2.2uF 16V MLCC, 0603 (imperial) 
