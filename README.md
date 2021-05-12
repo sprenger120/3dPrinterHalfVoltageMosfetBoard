@@ -3,7 +3,7 @@ Makes 12V Heaters (Bed + Extruder) compatible with 24V by plugging in between yo
 The board contains **overheat protection** and will leave the heaters off regardless of what the 3D printer wants. When your printer is configured correctly a thermal runaway error should stop the machine.
 The firmware also allows you to finely control how much voltage you want to send to your heaters if the 50% reduction isn't enough or you want to boost performance slightly.
 
-![PCB image](BoardPicture_Rev2.png)
+![PCB image](https://github.com/sprenger120/3dPrinterHalfVoltageMosfetBoard/blob/main/BoardPicture_Rev2.jpg?raw=true)
 
 
 ### Making one
