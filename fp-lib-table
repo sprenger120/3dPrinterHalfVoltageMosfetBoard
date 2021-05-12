@@ -1,0 +1,3 @@
+(fp_lib_table
+  (lib (name 3dPrinterHalfVoltageMosfetBoard)(type KiCad)(uri ${KIPRJMOD}/3dPrinterHalfVoltageMosfetBoard.pretty)(options "")(descr ""))
+)

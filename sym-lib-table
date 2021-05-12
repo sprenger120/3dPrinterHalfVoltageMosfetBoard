@@ -1,0 +1,5 @@
+(sym_lib_table
+  (lib (name MIC4126)(type Legacy)(uri ${KIPRJMOD}/Symbols/MIC4126.lib)(options "")(descr ""))
+  (lib (name standardContent)(type Legacy)(uri /home/sprenger/workspace/ottocar/PCB/drivecontroller/driveController/standardcontent/standardContent/standardContent.lib)(options "")(descr ""))
+  (lib (name XC6702)(type Legacy)(uri ${KIPRJMOD}/Symbols/XC6702.lib)(options "")(descr ""))
+)
