@@ -46,3 +46,10 @@ You have to connect the "Signal Heater" pins to the negative side as virtually a
 
 
 **todo rev. 1 testing**
+
+
+### Revisions
+
+- Rev. 2
+   - Secured "Signal Heater" inputs against accidental 24V connection
+- Rev. 1 (Initial release)
